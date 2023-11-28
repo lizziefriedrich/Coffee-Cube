@@ -1,18 +1,43 @@
-.container {
+.confirmcontain {
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    min-height: 200px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 100px;
-    margin: 10px;}
-    .responsive {
-        width: 100%;
-        height: 10%;
-    }
-/*button*/
-.beans {
-    position: relative;
+    align-items: center;
+}
+.contactinfo {
+    background-color: #000000;
+    color: white;
+    display: flex;
+}
+.john {
+    font-size: large;
 }
 
-.beans .btn {
+.contactcontain {
+display: flex;
+gap: 100px;
+margin:15px;
+}
+
+.responsive {
+    width: 100%;
+  
+    min-height: 201px;
+    max-height: 345px;
+    opacity: 70%;
+}
+  
+  
+  /*button*/
+  .beans {
+    position: relative;
+  }
+  
+  .beans .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,44 +50,248 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
-}
-
-.beans .btn:hover {
+  }
+  
+  .beans .btn:hover {
     background-color: rgb(218, 34, 34);
-}
-
-.btn {
+  }
+  
+  .btn {
     border-color: white;
     border-width: 5px;
-}
-
-@media screen and (max-width: 767px) {
-
-
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 10px;
+  }
+  
+  @media screen and (max-width: 767px) {
+  
+  
     body {
-        font-size: 12px;
+      font-size: 12px;
     }
-
-
-}
-
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-
+  
+    
+  }
+  
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+  
     /* Your CSS rules here */
     body {
-        font-size: 14px;
+      font-size: 14px;
     }
-}
-
-@media screen and (min-width: 1024px) {
-
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
     /* Your CSS rules here */
     body {
-        font-size: 16px;
+      font-size: 16px;
     }
-}
-
-body {
+  }
+  
+  body {
     margin: 0;
     padding: 0;
-}
+  }
+  
+  body.is-active {
+    overflow: hidden;
+  }
+  
+  
+  header {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    width: 100%;
+    padding: 1.5em 5%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header * {
+    box-sizing: border-box;
+  }
+  
+  /*START Logo styling*/
+  header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: #351f16;
+    text-decoration: none;
+  }
+  
+  header .logo img {
+    width: 50px;
+    max-width: 20vw;
+    height: auto;
+  }
+  
+  /*END Logo styling*/
+  
+  
+  /*START navigation links*/
+  header .links_box {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .links_box a {
+    color: #351f16;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  
+  /*links underline on hover*/
+  header .links_box a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    opacity: 0%;
+    background-color: #351f16;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  header .links_box a:hover:after {
+    opacity: 100%;
+    width: 100%;
+  }
+  
+  /*RESPONSIVE LINKS*/
+  /*if screen width is wider than 1000px show the first menu item (which is Home)*/
+  @media screen and (min-width: 1000px) {
+    header .links_box a:first-of-type {
+      display: none;
+    }
+  }
+  
+  /*if screen width is wider than 1000px restyle the navigation links*/
+  @media screen and (max-width: 1000px) {
+    header .links_box {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: bisque;
+      z-index: -99;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: all .5s ease-in-out;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20% 0;
+    }
+  
+    header .links_box.is-active {
+      z-index: 9990;
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  /*END navigation links*/
+  
+  @media screen and (max-width:767px) {
+    .locationdiv {display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;}
+  }
+  @media screen and (max-width:767px) {
+    .locationbox {width: 50%;}
+  }
+  /*hamburger (two lines) is only shown on screen smaller than 1000px. In this part you can see styling and animation of it*/
+  .hamburger {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .hamburger {
+      padding: 15px 15px;
+      display: inline-block;
+      cursor: pointer;
+      text-transform: none;
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+      outline: none;
+      z-index: 9999;
+      display: block;
+    }
+  
+    .hamburger.is-active .hamburger-inner {
+      bottom: 0;
+      transform: translate(0, -10px) rotate(-45deg);
+    }
+  
+    .hamburger.is-active .hamburger-inner::before {
+      top: 0;
+      transform: rotate(-90deg);
+    }
+  
+    .hamburger-box {
+      width: 30px;
+      height: 24px;
+      display: inline-block;
+      position: relative;
+    }
+  
+    .hamburger-box::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  
+    .hamburger-inner {
+      display: block;
+      top: auto;
+      bottom: 5px;
+    }
+  
+    .hamburger-inner,
+    .hamburger-inner::before {
+      width: 30px;
+      height: 3px;
+      background-color: #351f16;
+      border-radius: 0;
+      position: absolute;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .hamburger-inner::before {
+      content: "";
+      display: block;
+      top: -10px;
+    }
+  
+  }
