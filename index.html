@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cofee Cube Home</title>
+    <link rel="stylesheet" href="./index.css">
+    </link>
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html" class="logo">
+            <img src="./cubelogo.png" alt="coffee cube logo">
+            <span>Coffee Cube</span>
+        </a>
+
+        <nav class="links_box" id="menu">
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./index.html#location">Locations</a>
+            <a href="./shoppingcart.html">Shopping cart</a>
+        </nav>
+
+        <button class="hamburger" type="button" id="hamburger">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <script>
+            const toggleMenu = () => {
+                document.getElementById('hamburger').classList.toggle("is-active");
+                document.getElementById('menu').classList.toggle("is-active");
+                document.body.classList.toggle("is-active");
+            };
+
+            document.getElementById('hamburger').addEventListener("click", toggleMenu);
+
+            /*BONUS PART - smoothscrolling*/
+            const scrollToAnchor = (event) => {
+                if (window.innerWidth < 1000) { toggleMenu(); }
+                event.preventDefault();
+                let coord = document.getElementById(event.target.hash.slice(1)).offsetTop;
+                window.scrollTo({ top: coord, behavior: 'smooth' });
+            };
+
+
+
+            let internalLinks = document.getElementsByClassName('internalLink');
+            for (let i = 0; i < internalLinks.length; i++) {
+                // internalLinks[i].addEventListener("click", toggleMenu); //without smoothscroll
+                internalLinks[i].addEventListener("click", scrollToAnchor); //with smoothscroll
+            };
+        </script>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="beans">
+                <img src="bean.jpg" alt="cofee beans" class="responsive">
+                <div class=" orderbtn">
+                    <button class="btn"> ORDER </button><a href="./menu.html"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="menudiv">
+            <div class="menubox">
+                <img src="drink.jpeg" alt="menu pic" classs="menuimg">
+                <h1>Menu</h1>
+            </div>
+        </div>
+
+        <div class="locationdiv" id="location">
+            <div class="locationbox">
+                <img src="drink.jpeg" alt="menu pic" classs="locationimg">
+                <h1>Location</h1>
+            </div>
+            <div class="locationbox">
+                <img src="drink.jpeg" alt="menu pic" classs="locationimg">
+                <h1>Location</h1>
+            </div>
+            <div class="locationbox">
+                <img src="drink.jpeg" alt="menu pic" classs="locationimg">
+                <h1>Location</h1>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

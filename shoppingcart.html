@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./menu.css">
+    </link>
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html" class="logo">
+            <img src="./cubelogo.png" alt="coffee cube logo">
+            <span>Coffee Cube</span>
+        </a>
+
+        <nav class="links_box" id="menu">
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./homepagemenu.html">Locations</a>
+            <a href="./shoppingcart.html">Shopping cart</a>
+        </nav>
+
+        <button class="hamburger" type="button" id="hamburger">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <script>
+            const toggleMenu = () => {
+                document.getElementById('hamburger').classList.toggle("is-active");
+                document.getElementById('menu').classList.toggle("is-active");
+                document.body.classList.toggle("is-active");
+            };
+    
+            document.getElementById('hamburger').addEventListener("click", toggleMenu);
+    
+            /*BONUS PART - smoothscrolling*/
+            const scrollToAnchor = (event) => {
+                if (window.innerWidth < 1000) { toggleMenu(); }
+                event.preventDefault();
+                let coord = document.getElementById(event.target.hash.slice(1)).offsetTop;
+                window.scrollTo({ top: coord, behavior: 'smooth' });
+            };
+    
+    
+    
+            let internalLinks = document.getElementsByClassName('internalLink');
+            for (let i = 0; i < internalLinks.length; i++) {
+                // internalLinks[i].addEventListener("click", toggleMenu); //without smoothscroll
+                internalLinks[i].addEventListener("click", scrollToAnchor); //with smoothscroll
+            };
+        </script>
+    </header>
+
+    
+    <main>
+    <div class="container">
+        <div class="beans">
+            <img src="bean.jpg" alt="cofee beans" class="responsive">
+            <button class="btn"> ORDER </button>
+
+        </div>
+      
+        </div>
+        <div class="contact-info-container">
+            <div class="Contact-info">
+                Name: <br>
+                Phone #: <br>
+                Pick-up Time: <br>
+                Pick-up Location:
+            <div class="empty-box"></div>
+                </div>    
+        </div>
+       
+        <div class="cart">
+            <div class="item1">
+                <img src="drink.jpeg" class="drink" alt="Latte">
+                <div class="item">
+                    Iced Latte
+                    </div>
+                <div class="price">
+                    105 kc
+                    </div>
+              <div class="button">
+                    <button class="minus">-</button>
+                    <button class="one">1</button>
+                <button class="plus">+</button>
+                    </div>
+                </div>
+            <div class="item1">
+                <img src="drink.jpeg" class="drink" alt="Latte">
+                <div class="item">
+                    Iced Latte
+                    </div>
+                <div class="price">
+                    105 kc
+                    </div>
+                <div class="button">
+                    <button class="minus">-</button>
+                    <button class="one">1</button>
+                    <button class="plus">+</button>
+                    </div>
+                </div>
+
+            <div class="item1">
+                <img src="drink.jpeg" class="drink" alt="Latte">
+                <div class="item">
+                    Iced Latte
+                </div>
+                <div class="price">
+                    105 kc
+                    </div>
+                <div class="button">
+                    <button class="minus">-</button>
+                    <button class="one">1</button>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+
+            </div>
+                <div class="outerbox">
+                <div class="order-total">
+                <p1>Order Total<br>315 kc</p1>
+                </div>
+            </div>
+
+        <div class="arrow">
+            <a href="https://www.google.com/search?q=confirm+order&oq=confirm+order&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDM1MTFqMWo0qAIAsAIA&sourceid=chrome&ie=UTF-8">
+                <img src="arrow5.jpg" class="arrowpic" alt="Arrow Pointing Right">
+                </a>
+            </div>
+    </div>
+
+
+</main>
+<footer>
+    <p>GDPR<br>
+        <a1>EN</a1>
+        <a2>CZ</a2> Terms & Conditions
+        </p>
+</footer>
+
+
+</body>
+</html>
