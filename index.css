@@ -3,11 +3,34 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  p {display: flex;
-justify-content: center;}
-  
-  .menubox {
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+.menucontainer {display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top:50px;}
+.menutext {
+    display: flex
+}
+
+.address {
+    display: flex;
+    min-width: 40px;
+}
+
+.hours {
+    display: flex;
+    min-width: 50%;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+
+.menubox {
     display: flex;
     justify-content: center;
     width: 33%;
@@ -16,14 +39,14 @@ justify-content: center;}
     color: white;
     flex-direction: column;
     flex-wrap: nowrap;
-  }
-  
-  h1 {
+}
+
+h1 {
     display: flex;
     justify-content: center;
-  }
-  
-  .locationbox {
+}
+
+.locationbox {
     display: flex;
     justify-content: center;
     width: 30%;
@@ -33,29 +56,29 @@ justify-content: center;}
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 5px;
-  
-  }
-  
-  .locationdiv {
+
+}
+
+.locationdiv {
     display: flex;
     flex-direction: row;
     padding: 2%;
     gap: 2%;
     justify-content: center;
     margin-top: 7%;
-  }
+}
 
-  .responsive {
+.responsive {
     width: 100%;
     height: 10%;
-  }
-  
-  /*button*/
-  .beans {
+}
+
+/*button*/
+.beans {
     position: relative;
-  }
-  
-  .beans .btn {
+}
+
+.beans .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -68,78 +91,78 @@ justify-content: center;}
     border: none;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
-  .beans .btn:hover {
+}
+
+.beans .btn:hover {
     background-color: rgb(218, 34, 34);
-  }
-  
-  .btn {
+}
+
+.btn {
     border-color: white;
     border-width: 5px;
-  }
-  
-  
-  
-  
-  
-  .menu {
+}
+
+
+
+
+
+.menu {
     max-width: 70%;
     width: auto;
     max-height: 300px;
     min-height: 200px;
     background-color: black;
-  
-  }
-  
-  .container {
+
+}
+
+.container {
     display: flex;
     flex-direction: column;
     gap: 100px;
     margin: 10px;
-  }
-  
-  .containmenu {
+}
+
+.containmenu {
     display: flex;
-  }
-  
-  @media screen and (max-width: 767px) {
-  
-  
+}
+
+@media screen and (max-width: 767px) {
+
+
     body {
-      font-size: 12px;
+        font-size: 12px;
     }
-  
-    
-  }
-  
-  @media screen and (max-width: 1023px) and (min-width: 768px) {
-  
+
+
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
     /* Your CSS rules here */
     body {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
-  
-  @media screen and (min-width: 1024px) {
-  
+}
+
+@media screen and (min-width: 1024px) {
+
     /* Your CSS rules here */
     body {
-      font-size: 16px;
+        font-size: 16px;
     }
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     padding: 0;
-  }
-  
-  body.is-active {
+}
+
+body.is-active {
     overflow: hidden;
-  }
-  
-  
-  header {
+}
+
+
+header {
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     position: fixed;
@@ -151,49 +174,49 @@ justify-content: center;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  header * {
+}
+
+header * {
     box-sizing: border-box;
-  }
-  
-  /*START Logo styling*/
-  header .logo {
+}
+
+/*START Logo styling*/
+header .logo {
     display: flex;
     align-items: center;
     gap: 1em;
     color: #351f16;
     text-decoration: none;
-  }
-  
-  header .logo img {
+}
+
+header .logo img {
     width: 50px;
     max-width: 20vw;
     height: auto;
-  }
-  
-  /*END Logo styling*/
-  
-  
-  /*START navigation links*/
-  header .links_box {
+}
+
+/*END Logo styling*/
+
+
+/*START navigation links*/
+header .links_box {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  header .links_box a {
+}
+
+header .links_box a {
     color: #351f16;
     text-decoration: none;
     display: flex;
     align-items: center;
     letter-spacing: 2px;
     position: relative;
-  }
-  
-  /*links underline on hover*/
-  header .links_box a::after {
+}
+
+/*links underline on hover*/
+header .links_box a::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -203,130 +226,136 @@ justify-content: center;}
     opacity: 0%;
     background-color: #351f16;
     transition: all 0.5s ease-in-out;
-  }
-  
-  header .links_box a:hover:after {
+}
+
+header .links_box a:hover:after {
     opacity: 100%;
     width: 100%;
-  }
-  
-  /*RESPONSIVE LINKS*/
-  /*if screen width is wider than 1000px show the first menu item (which is Home)*/
-  @media screen and (min-width: 1000px) {
+}
+
+/*RESPONSIVE LINKS*/
+/*if screen width is wider than 1000px show the first menu item (which is Home)*/
+@media screen and (min-width: 1000px) {
     header .links_box a:first-of-type {
-      display: none;
+        display: none;
     }
-  }
-  
-  /*if screen width is wider than 1000px restyle the navigation links*/
-  @media screen and (max-width: 1000px) {
+}
+
+/*if screen width is wider than 1000px restyle the navigation links*/
+@media screen and (max-width: 1000px) {
     header .links_box {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: bisque;
-      z-index: -99;
-      opacity: 0;
-      transform: translateY(-100%);
-      transition: all .5s ease-in-out;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20% 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: bisque;
+        z-index: -99;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20% 0;
     }
-  
+
     header .links_box.is-active {
-      z-index: 9990;
-      opacity: 1;
-      transform: translateY(0%);
+        z-index: 9990;
+        opacity: 1;
+        transform: translateY(0%);
     }
-  }
-  
-  /*END navigation links*/
-  
-  @media screen and (max-width:767px) {
-    .locationdiv {display: flex;
-    flex-direction: column;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;}
-  }
-  @media screen and (max-width:767px) {
-    .locationbox {width: 50%;}
-  }
-  /*hamburger (two lines) is only shown on screen smaller than 1000px. In this part you can see styling and animation of it*/
-  .hamburger {
+}
+
+/*END navigation links*/
+
+@media screen and (max-width:767px) {
+    .locationdiv {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .locationbox {
+        width: 50%;
+    }
+}
+
+/*hamburger (two lines) is only shown on screen smaller than 1000px. In this part you can see styling and animation of it*/
+.hamburger {
     display: none;
-  }
-  
-  @media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 1000px) {
     .hamburger {
-      padding: 15px 15px;
-      display: inline-block;
-      cursor: pointer;
-      text-transform: none;
-      background-color: transparent;
-      border: 0;
-      margin: 0;
-      outline: none;
-      z-index: 9999;
-      display: block;
+        padding: 15px 15px;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        outline: none;
+        z-index: 9999;
+        display: block;
     }
-  
+
     .hamburger.is-active .hamburger-inner {
-      bottom: 0;
-      transform: translate(0, -10px) rotate(-45deg);
+        bottom: 0;
+        transform: translate(0, -10px) rotate(-45deg);
     }
-  
+
     .hamburger.is-active .hamburger-inner::before {
-      top: 0;
-      transform: rotate(-90deg);
+        top: 0;
+        transform: rotate(-90deg);
     }
-  
+
     .hamburger-box {
-      width: 30px;
-      height: 24px;
-      display: inline-block;
-      position: relative;
+        width: 30px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
     }
-  
+
     .hamburger-box::before {
-      display: block;
-      content: '';
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
+        display: block;
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
     }
-  
+
     .hamburger-inner {
-      display: block;
-      top: auto;
-      bottom: 5px;
+        display: block;
+        top: auto;
+        bottom: 5px;
     }
-  
+
     .hamburger-inner,
     .hamburger-inner::before {
-      width: 30px;
-      height: 3px;
-      background-color: #351f16;
-      border-radius: 0;
-      position: absolute;
-      transition: all 0.3s ease-in-out;
+        width: 30px;
+        height: 3px;
+        background-color: #351f16;
+        border-radius: 0;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
     }
-  
+
     .hamburger-inner::before {
-      content: "";
-      display: block;
-      top: -10px;
+        content: "";
+        display: block;
+        top: -10px;
     }
-  
-  }
+
+}
