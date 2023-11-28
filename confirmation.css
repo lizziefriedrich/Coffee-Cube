@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -22,36 +23,78 @@ body {
   background-image: url('bean.jpg'); 
   background-size: cover;
   padding: 20px;
-  position: relative;
+  opacity: 0.8; 
+
 }
 
-.navigation {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-
-.confirmation-message {
-  font-size: 24px;
-  font-weight: bold;
-  background-color: #000000;
-  color: #fff;
-  padding: 20px;
+.confirmation {
   margin: 20px 0;
 }
 
-.address-highlight {
-  text-decoration: underline;
+.confirmation-message {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+.address {
+  margin-bottom: 20px;
 }
 
-.buttons button {
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+button {
   padding: 10px 20px;
-  margin: 10px;
-  width: 200px; /* Adjust as needed */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top:
+  margin-top: auto;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+.confirm-order-boxes .box {
+  color: white;     
+  border: 2px solid white; 
+  padding: 10px;       
+  margin: 0px;        
+  display: inline-block; 
+}
+.address-highlight {
+text-decoration: underline;
+}
