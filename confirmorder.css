@@ -1,3 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background-image: url('bean.jpg'); 
+  background-size: cover;
+  padding: 20px;
+  opacity: 0.8; 
+
+}
+.confirm-order-boxes .box {
+  color: white;     
+  border: 2px solid white; 
+  padding: 10px;       
+  margin: 0px;        
+  display: inline-block; 
+}
 .confirmcontain {
     background-color: #000000;
     color: white;
