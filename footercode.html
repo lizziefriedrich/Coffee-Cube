@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style> /* Style for the black footer */
+        footer {
+          background-color: #000; /* Black background color */
+          color: #fff; /* White text color */
+          padding: 20px; /* Add padding for better appearance */
+          text-align: center; /* Center align text */
+        }
+        
+        /* Style for the footer links */
+        footer a {
+          color: #fff; /* White link color */
+          text-decoration: none; /* Remove underlines */
+          margin: 0 10px; /* Add spacing between links */
+        }
+        .language-switcher {
+          display: inline-block;
+          margin-top: 10px;
+        }
+        
+        .language-switcher select {
+          padding: 5px;}
+          </style>
+</head>
+<body>
+    
+</body>
+<footer>
+    <p>&copy; 2023 Coffee Cube. All rights reserved.</p>
+    <p>
+        <a href="#gdpr">GDPR</a> |
+        <a href="#terms">Terms and Conditions</a>
+    
+    </p>
+    <div class="language-switcher">
+        <label for="language">Language:</label>
+        <select id="language" onchange="changeLanguage(this.value)">
+            <option value="english">English</option>
+            <option value="czech">Czech</option>
+        </select>
+    </div>
+</footer>
+</html>
