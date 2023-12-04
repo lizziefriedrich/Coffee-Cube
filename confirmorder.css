@@ -1,0 +1,186 @@
+/* Style for the black footer */
+footer {
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+  padding: 20px; /* Add padding for better appearance */
+  text-align: center; /* Center align text */
+}
+
+/* Style for the footer links */
+footer a {
+  color: #fff; /* White link color */
+  text-decoration: none; /* Remove underlines */
+  margin: 0 10px; /* Add spacing between links */
+}
+.language-switcher {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.language-switcher select {
+  padding: 5px;}
+.confirmb {
+        
+  background-color: bisque;
+color: #000000;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+display: flex;
+min-width: 30%;
+}
+.confirmb:hover {
+  background-color: #000000;
+  color: white;
+}
+.amount {
+  display: flex;
+background-color: bisque;
+color: #000000;
+
+border: none;
+cursor: pointer;
+border-radius: 5px;
+justify-content: center;
+align-items: center;
+min-width: 30%;
+}
+.totalcontain {    display: flex;
+flex-direction: row;
+margin: 30px;
+width: 100%;
+justify-content: space-around;}
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-button {
+  background-color: #ff0000;
+  /* Red background color */
+  color: #fff;
+  /* White text color */
+  border: none;
+  /* Remove border */
+  padding: 5px 10px;
+  /* Add some padding for better appearance */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  font-size: 16px;
+  /* Adjust font size */
+  border-radius: 50%;
+  /* Make it a circle */
+  margin: 10px;
+}
+
+.itempic {
+  width: 30%;
+  margin: 20px
+}
+
+.item {
+  display: flex;
+  background-color: bisque;
+  justify-content: space-around;
+  color: black
+}
+
+.itemscontain {
+  display: flex;
+  gap: 20px
+}
+
+/*button*/
+.contactinfo {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  line-height: 280%;
+}
+
+.john {
+  font-size: large;
+}
+
+.contactcontain {
+  display: flex;
+  gap: 100px;
+  margin: 15px;
+}
+
+.beans {
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.black-box {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beans .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #000000;
+  color: white;
+  font-size: 80px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.beans .btn:hover {
+  background-color: rgb(218, 34, 34);
+}
+
+.btn {
+  border-color: white;
+  border-width: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+
+
+  body {
+      font-size: 12px;
+  }
+
+
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+  /* Your CSS rules here */
+  body {
+      font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* Your CSS rules here */
+  body {
+      font-size: 16px;
+  }
+}

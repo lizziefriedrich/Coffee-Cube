@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cofee Cube Home</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./header.css">
     </link>
 </head>
 
@@ -68,30 +69,96 @@
             </div>
 
         </div>
-        <div class="menudiv">
+        <div class="menucontainer">
+
             <div class="menubox">
+                <a href="./menu.html"></a>
                 <img src="drink.jpeg" alt="menu pic" classs="menuimg">
                 <h1>Menu</h1>
+
+            </div>
+
+            <div class="menubox">
+                <img src="drink.jpeg" alt="menu pic" classs="menuimg">
+                <h1>Bar Menu</h1>
+
             </div>
         </div>
-
         <div class="locationdiv" id="location">
             <div class="locationbox">
                 <img src="drink.jpeg" alt="menu pic" classs="locationimg">
-                <h1>Location</h1>
+                <h1>Old Town</h1>
+                <div class="menutext">
+                    <div class="address">
+                        <p>
+                            Jakubska 664/16,
+                            Prague 110 00
+                            Czech Republic</p>
+                    </div>
+                    <div class="hours">
+                        <p>Mon 7:00-20:00 <br>
+                            Tu-Th 7:00-18:00 <br>
+                            Sat 8:00-15:00 <br>
+                            Sun 8:00-16:00</p>
+                    </div>
+                </div>
             </div>
             <div class="locationbox">
                 <img src="drink.jpeg" alt="menu pic" classs="locationimg">
-                <h1>Location</h1>
+                <h1>Bar</h1>
+                <div class="menutext">
+                    <div class="address">
+                        <p>
+                            Jakubska 664/16,
+                            Prague 110 00
+                            Czech Republic</p>
+                    </div>
+                    <div class="hours">
+                        <p>Mon 7:00-20:00 <br>
+                            Tu-Th 7:00-18:00 <br>
+                            Sat 8:00-15:00 <br>
+                            Sun 8:00-16:00</p>
+                    </div>
+                </div>
             </div>
             <div class="locationbox">
                 <img src="drink.jpeg" alt="menu pic" classs="locationimg">
-                <h1>Location</h1>
+                <h1>New Town
+                </h1>
+                <div class="menutext">
+                    <div class="address">
+                        <p>
+                            Jungmannovo
+                            Namesti 6, Prague
+                            11000 Czech Republic</p>
+                    </div>
+                    <div class="hours">
+                        <p>Mon 7:00-20:00 <br>
+                            Tu-Th 7:00-18:00 <br>
+                            Sat 8:00-15:00 <br>
+                            Sun 8:00-16:00</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
     </main>
-
+    <footer>
+        <p>&copy; 2023 Coffee Cube. All rights reserved.</p>
+        <p>
+            <a href="#gdpr">GDPR</a> |
+            <a href="#terms">Terms and Conditions</a>
+        
+        </p>
+        <div class="language-switcher">
+            <label for="language">Language:</label>
+            <select id="language" onchange="changeLanguage(this.value)">
+                <option value="english">English</option>
+                <option value="czech">Czech</option>
+            </select>
+        </div>
+    </footer>
 </body>
 
 </html>

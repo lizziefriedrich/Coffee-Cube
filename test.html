@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cofee Cube Home</title>
+    <link rel="stylesheet" href="./header.css">
+    </link>
+    <style>
+        .confirmb {
+        
+            background-color: bisque;
+    color: #000000;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    min-width: 30%;
+        }
+        .confirmb:hover {
+            background-color: #000000;
+            color: white;
+        }
+        .amount {
+            display: flex;
+    background-color: bisque;
+    color: #000000;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+        }
+.totalcontain {    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    width: 100%;
+    justify-content: space-around;}
+        .text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .delete-button {
+            background-color: #ff0000;
+            /* Red background color */
+            color: #fff;
+            /* White text color */
+            border: none;
+            /* Remove border */
+            padding: 5px 10px;
+            /* Add some padding for better appearance */
+            cursor: pointer;
+            /* Change cursor to pointer on hover */
+            font-size: 16px;
+            /* Adjust font size */
+            border-radius: 50%;
+            /* Make it a circle */
+            margin: 10px;
+        }
+
+        .itempic {
+            width: 30%;
+            margin: 20px
+        }
+
+        .item {
+            display: flex;
+            background-color: bisque;
+            justify-content: space-around;
+            color: black
+        }
+
+        .itemscontain {
+            display: flex;
+            gap: 20px
+        }
+
+        /*button*/
+        .contactinfo {
+            background-color: #000000;
+            color: white;
+            display: flex;
+            line-height: 280%;
+        }
+
+        .john {
+            font-size: large;
+        }
+
+        .contactcontain {
+            display: flex;
+            gap: 100px;
+            margin: 15px;
+        }
+
+        .beans {
+            position: relative;
+            overflow: hidden;
+            min-height: 200px;
+            max-height: 400px;
+        }
+
+        .black-box {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .beans .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #000000;
+            color: white;
+            font-size: 80px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .beans .btn:hover {
+            background-color: rgb(218, 34, 34);
+        }
+
+        .btn {
+            border-color: white;
+            border-width: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 767px) {
+
+
+            body {
+                font-size: 12px;
+            }
+
+
+        }
+
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+
+            /* Your CSS rules here */
+            body {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            /* Your CSS rules here */
+            body {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="logo">
+            <img src="./cubelogo.png" alt="coffee cube logo">
+            <span>Coffee Cube</span>
+        </a>
+
+        <nav class="links_box" id="menu">
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./index.html#location">Locations</a>
+            <a href="./shoppingcart.html">Shopping cart</a>
+        </nav>
+
+        <button class="hamburger" type="button" id="hamburger">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <script>
+            const toggleMenu = () => {
+                document.getElementById('hamburger').classList.toggle("is-active");
+                document.getElementById('menu').classList.toggle("is-active");
+                document.body.classList.toggle("is-active");
+            };
+
+            document.getElementById('hamburger').addEventListener("click", toggleMenu);
+        </script>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="beans">
+                <img src="bean.jpg" alt="cofee beans" class="responsive">
+                <div class=" orderbtn">
+                    <button class="btn"> ORDER </button><a href="./menu.html"></a>
+                </div>
+            </div>
+            <div class="black-box">
+                <h1> Confirm Details</h1>
+                <div class="contactcontain">
+                    <div class="contactinfo">
+                        <p class="john">
+                            Name: John Doe <br>
+                            Phone #: +420 568 963 7726 <br>
+                            Email: john.doe@gmail.com <br>
+
+
+                        </p>
+                    </div>
+                    <div class="contactinfo">
+                        <p class="john">
+                            Pick-Up Time: 11:30 <br>
+                            Pick-Up Location: Old Town <br>
+
+                        </p>
+                    </div>
+
+                </div>
+                <h1>Items:</h1>
+                <div class="itemscontain">
+                    <div class="item">
+                        <img src="drink.jpeg" alt="menu pic" class="itempic">
+                        <div class="text">
+                            <h2> Iced Latte </h2>
+                            <p>Quantity: 1</p>
+                        </div>
+                        <div class="delete">
+                            <button class="delete-button">X</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="drink.jpeg" alt="menu pic" class="itempic">
+                        <div class="text">
+                            <h2> Iced Latte </h2>
+                            <p>Quantity: 1</p>
+                        </div>
+                        <div class="delete">
+                            <button class="delete-button">X</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="drink.jpeg" alt="menu pic" class="itempic">
+                        <div class="text">
+                            <h2> Iced Latte </h2>
+                            <p>Quantity: 1</p>
+                        </div>
+                        <div class="delete">
+                            <button class="delete-button">X</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="totalcontain">
+                    <div class="amount"><h1>300Kc</h1>  </div>
+                    <div class="confirmbtn">
+                       <a href="./confirmation.html"><button class="confirmb"> <h1>CONFIRM ORDER</h1> </button> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
