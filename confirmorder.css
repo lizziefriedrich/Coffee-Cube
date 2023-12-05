@@ -76,7 +76,8 @@ justify-content: space-around;}
 
 .itempic {
   width: 30%;
-  margin: 20px
+  margin: 20px;
+  object-fit: cover; /* Add this line */
 }
 
 .item {
