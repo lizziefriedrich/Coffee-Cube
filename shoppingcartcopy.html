@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="./menu.css">
-    <link rel="stylesheet" href="./shoppingcart.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./shoppingcartcopy.css">
     </link>
 </head>
 
@@ -87,38 +87,23 @@
                 <img src="drink.jpeg" class="drink" alt="Latte">
                 <div class="item">
                     Iced Latte
-                    </div>
+                </div>
                 <div class="price">
                     105 kc
-                    </div>
-              <div class="button">
-                    <button class="minus">-</button>
-                    <button class="one">1</button>
-                <button class="plus">+</button>
-                    </div>
-                <div class="X">
-                    <img src="x.png" class="X" alt="Click X to delete item">
                 </div>
-                </div>
-            <div class="item1">
-                <img src="drink.jpeg" class="drink" alt="Latte">
-                <div class="item">
-                    Iced Latte
-                    </div>
-                <div class="price">
-                    105 kc
-                    </div>
                 <div class="button">
-                    <button class="minus">-</button>
-                    <button class="one">1</button>
-                    <button class="plus">+</button>
-                    </div>
-                <div class="X">
-                    <img src="x.png" class="X" alt="Click X to delete item">
+                    <button id="minus">-</button>
+                    <input type="one" value="0" id="input"/>
+                    <button id="plus">+</button>
                 </div>
-            </div>
+                    <!-- Fake buttons for adding milk and sugar -->
+                    <button class="fake-button" onclick="addMilk()">Add Milk</button>
+                    <button class="fake-button" onclick="addSugar()">Add Sugar</button>
                 
-
+                <div class="X">
+                    <img src="x.png" class="X" alt="Click X to delete item">
+                </div>
+            </div>
             <div class="item1">
                 <img src="drink.jpeg" class="drink" alt="Latte">
                 <div class="item">
@@ -126,18 +111,41 @@
                 </div>
                 <div class="price">
                     105 kc
-                    </div>
-                <div class="button">
-                    <button class="minus">-</button>
-                    <button class="one">1</button>
-                    <button class="plus">+</button>
                 </div>
+                <div class="button">
+                    <button id="minus">-</button>
+                    <input type="one" value="0" id="input"/>
+                    <button id="plus">+</button>
+                </div>
+                    <!-- Fake buttons for adding milk and sugar -->
+                    <button class="fake-button" onclick="addMilk()">Add Milk</button>
+                    <button class="fake-button" onclick="addSugar()">Add Sugar</button>
+                
                 <div class="X">
                     <img src="x.png" class="X" alt="Click X to delete item">
                 </div>
             </div>
-            
-
+                <div class="item1">
+                    <img src="drink.jpeg" class="drink" alt="Latte">
+                    <div class="item">
+                        Iced Latte
+                    </div>
+                    <div class="price">
+                        105 kc
+                    </div>
+                    <div class="button">
+                        <button id="minus">-</button>
+                        <input type="one" value="0" id="input"/>
+                        <button id="plus">+</button>
+                    </div>
+                        <!-- Fake buttons for adding milk and sugar -->
+                        <button class="fake-button" onclick="addMilk()">Add Milk</button>
+                        <button class="fake-button" onclick="addSugar()">Add Sugar</button>
+                    
+                    <div class="X">
+                        <img src="x.png" class="X" alt="Click X to delete item">
+                    </div>
+                </div>
             </div>
                 <div class="outerbox">
                 <div class="order-total">
@@ -146,7 +154,7 @@
             </div>
 
         <div class="arrow">
-            <a href="https://www.google.com/search?q=confirm+order&oq=confirm+order&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDM1MTFqMWo0qAIAsAIA&sourceid=chrome&ie=UTF-8">
+            <a href="./confirmorder.html">
                 <img src="arrow5.jpg" class="arrowpic" alt="Arrow Pointing Right">
                 </a>
             </div>
@@ -155,10 +163,19 @@
 
 </main>
 <footer>
-    <p>GDPR<br>
-        <a>EN</a>
-        <a>CZ</a> Terms & Conditions
-        </p>
+    <p>&copy; 2023 Coffee Cube. All rights reserved.</p>
+    <p>
+        <a href="#gdpr">GDPR</a> |
+        <a href="#terms">Terms and Conditions</a>
+    
+    </p>
+    <div class="language-switcher">
+        <label for="language">Language:</label>
+        <select id="language" onchange="changeLanguage(this.value)">
+            <option value="english">English</option>
+            <option value="czech">Czech</option>
+        </select>
+    </div>
 </footer>
 
 
