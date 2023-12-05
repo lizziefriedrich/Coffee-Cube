@@ -178,7 +178,7 @@ footer a {
 .container {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 10px;
   margin: 10px;
   align-items: center; /* Center the container horizontally */
   justify-content: center; /* Center the container vertically */
