@@ -1,9 +1,20 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  margin: 0; /* Remove default margin */
+}
 /* Style for the black footer */
 footer {
   background-color: #000; /* Black background color */
   color: #fff; /* White text color */
   padding: 20px; /* Add padding for better appearance */
   text-align: center; /* Center align text */
+}
+.text {
+  flex-grow: 1; /* Allow text to grow and take available space */
 }
 
 /* Style for the footer links */
@@ -19,71 +30,96 @@ footer a {
 
 .language-switcher select {
   padding: 5px;}
-.confirmb {
-        
-  background-color: bisque;
-color: #000000;
-padding: 12px 24px;
-border: none;
-cursor: pointer;
-border-radius: 5px;
-display: flex;
-min-width: 30%;
-}
-.confirmb:hover {
-  background-color: #000000;
-  color: white;
-}
-.amount {
-  display: flex;
-background-color: bisque;
-color: #000000;
 
-border: none;
-cursor: pointer;
-border-radius: 5px;
-justify-content: center;
-align-items: center;
-min-width: 30%;
+  .confirmbtn {
+    width: 100%; /* Make the button take full width */
+    text-align: center; /* Center the button */
+  }
+  
+  .confirmb {
+    background-color: bisque;
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color and text color */
+  }
+  
+  .confirmb:hover {
+    background-color: #000;
+    color: red;
+  }
+
+
+.totalcontain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
 }
-.totalcontain {    display: flex;
-flex-direction: row;
-margin: 30px;
-width: 100%;
-justify-content: space-around;}
+
+.amount {
+  background-color: bisque;
+  color: #000;
+  border: 2px solid #000;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.amount h1 {
+  font-size: 1.5em; /* Adjust the font size for the title */
+  margin-bottom: 10px; /* Add some space between the title and the amount */
+}
 .text {
   display: flex;
   flex-direction: column;
 }
 
+
 .delete-button {
-  background-color: #ff0000;
-  /* Red background color */
-  color: #fff;
-  /* White text color */
+  background-color: #ff5a5a; /* Red background color for delete button */
+  color: white;
   border: none;
-  /* Remove border */
-  padding: 5px 10px;
-  /* Add some padding for better appearance */
+  padding: 8px 16px;
+  border-radius: 5px;
   cursor: pointer;
-  /* Change cursor to pointer on hover */
-  font-size: 16px;
-  /* Adjust font size */
-  border-radius: 50%;
-  /* Make it a circle */
-  margin: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  margin: 7px; 
 }
 
-.itempic {
-  width: 30%;
-  margin: 20px
+.delete-button:hover {
+  background-color: #ff3030; /* Darker red on hover */
 }
+
+
+.itempic {
+  width: 80px; /* Adjust the width of the image */
+  height: 80px; /* Adjust the height of the image */
+  object-fit: cover; /* Maintain aspect ratio without distortion */
+  border-radius: 50%; /* Make the image a circle */
+  margin-right: 15px; /* Add spacing between image and text */
+}
+
 
 .item {
   display: flex;
-  background-color: bisque;
-  justify-content: space-around;
-  color: black
+  background-color: #f9f9f9; /* Light background color */
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  color:#000000
+
+}
+
+.item:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
 }
 
 .itemscontain {
@@ -93,10 +129,17 @@ justify-content: space-around;}
 
 /*button*/
 .contactinfo {
-  background-color: #000000;
+  background-color: #333; /* Dark background color */
   color: white;
   display: flex;
-  line-height: 280%;
+  line-height: 1.5;
+  padding: 10px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+}
+
+.contactinfo p {
+  margin: 0; /* Remove default paragraph margin */
 }
 
 .john {
@@ -117,7 +160,7 @@ justify-content: space-around;}
 }
 
 .black-box {
-  background-color: black;
+  background-color:#000;
   color: white;
   padding: 20px;
   margin: 10px;
@@ -128,35 +171,17 @@ justify-content: space-around;}
   align-items: center;
 }
 
-.beans .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #000000;
-  color: white;
-  font-size: 80px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
 
-.beans .btn:hover {
-  background-color: rgb(218, 34, 34);
-}
 
-.btn {
-  border-color: white;
-  border-width: 5px;
-}
+
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 10px;
   margin: 10px;
+  align-items: center; /* Center the container horizontally */
+  justify-content: center; /* Center the container vertically */
 }
 
 @media screen and (max-width: 767px) {
