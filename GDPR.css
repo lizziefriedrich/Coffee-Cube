@@ -2,3 +2,7 @@
 margin-top: 70px;
 padding:10px;
 flex-direction: column;}
+.heading {text-decoration: underline;
+text-transform: capitalize;
+font-size: larger;
+font-weight: 200;}
