@@ -29,6 +29,7 @@ p {
 .address {
     display: flex;
     min-width: 40px;
+    justify-content: center;
 }
 
 .hours {
