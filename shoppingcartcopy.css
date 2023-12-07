@@ -1,155 +1,196 @@
 /*shopping cart page*/
 .contact-info-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cart {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 30px;
-  }
-  
-  .item1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .textbox {
-    padding:2px;
-  }
-
-  .contact {
-    font-size: 20px;
-    font-size: 20px;
-    padding: 5px;
-  }
-  
-  .drink {
-    height: 10%;
-    width: 35%;
-    border-radius: 3%;
-  }
-  
-  .button {
-    display: flex;
-  }
-  
-  .item {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-  }
-
-  .price {
-    font-size: 20px;
-  }
-  
- 
-  
-  .order-total {
-    background-color: #f2f2f2; /* Light background color */
-    color: #333; /* Dark text color */
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  .outerbox {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .arrow {
-    display: flex;
-    justify-content: center;
-    width: auto;
-  }
-
-  .arrowpic {
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
-    padding-bottom: 5px;
-    padding-top:2px;
-  }
-  
-  .arrow a:hover .arrowpic {
-    transform: scale(1.2); /* Add a scale effect on hover */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-  
-  
-  .Contact-info {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    align-content: flex-end;
-  }
-  
-  .responsive {
-    width: 100%;
-    height: 10%;
-  }
-  
-  /*button*/
-  .beans {
-    position: relative;
-    text-align: center;
-    color:white;
-  }
 
-  .Slogan {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:100px;
-  }
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px;
+}
 
-  .X {
-    width: 15%;
-    display: flex;
-    justify-content: center;
-  }
+.item1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  border:solid rgba(128,128,128, 0.25);
+  border-radius:15px;
+  box-shadow:5px
 
-  .textfields {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-content: flex-start;
+}
+
+.textbox {
+  padding: 2px;
+}
+
+.contact {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.drink {
+  height: 10%;
+  width: 30%;
+  border-radius: 5%;
+}
+
+.button {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.order-total {
+      /* background-color: #f2f2f2; */
+      color: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 20px;
+      text-align: center;
+      width: 50%;
+      background-color: black;
+      margin-bottom: 8px;
+}
+
+.outerbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+.arrowpic {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease-in-out;
+  padding-bottom: 5px;
+  padding-top: 2px;
+}
+
+.arrow a:hover .arrowpic {
+  transform: scale(1.2);
+}
+
+.Contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.responsive {
+  width: 100%;
+  height: 10%;
+}
+
+.beans {
+  background-image: url(bean.jpg);
+  background-size: cover;
+  padding: 80px; /* Increased padding for better appearance */
+  opacity: 0.8;
+  margin-top: 70px;
+  text-align: center;
+  color: white;
+  position: relative; /* Add relative positioning for the Slogan */
+}
+
+.Slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 54px;
+}
+
+.delete-button {
+  display: flex;
+  justify-content: center;
+  background-color: #ff5a5a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 7px;
+}
+
+.textfields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .fake-button {
   display: inline-block;
   padding: 8px 12px;
   margin: 0 5px;
-  background-color: #3498db; /* Blue color */
-  color: #fff; /* White text color */
-  border: none;
+  background-color: black;
+  color: white;
+  border:none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 .fake-button:hover {
-  background-color: #2980b9;
+  background-color: red;
 }
-  
-  
- 
-  
+
+#plus {
+  background-color: black;
+  color: white;
+}
+
+#minus {
+  background-color: black;
+  color: white;
+}
+
+main {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.button input {
+  width: 25px;
+}
+
+
+@media screen and (max-width: 767px) {
+.item1 {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+}
