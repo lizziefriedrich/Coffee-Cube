@@ -1,3 +1,19 @@
+.order-button {
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 30px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.order-button:hover {
+  background-color: #555;
+}
+
 /*shopping cart page*/
 .contact-info-container {
   display: flex;
@@ -21,10 +37,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 5px;
-  border:solid rgba(128,128,128, 0.25);
-  border-radius:15px;
-  box-shadow:5px
-
+  border: solid rgba(128, 128, 128, 0.25);
+  border-radius: 15px;
+  box-shadow: 5px
 }
 
 .textbox {
@@ -57,14 +72,14 @@
 }
 
 .order-total {
-      /* background-color: #f2f2f2; */
-      color: white;
-      font-size: 25px;
-      text-align: center;
-      width: 40%;
-      color: black;
-      margin-bottom: 8px;
-      border-top:solid  black;
+  /* background-color: #f2f2f2; */
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  width: 40%;
+  color: black;
+  margin-bottom: 8px;
+  border-top: solid black;
 }
 
 .outerbox {
@@ -109,12 +124,14 @@
 .beans {
   background-image: url(../images/bean.jpg);
   background-size: cover;
-  padding: 80px; /* Increased padding for better appearance */
+  padding: 80px;
+  /* Increased padding for better appearance */
   opacity: 0.8;
   margin-top: 70px;
   text-align: center;
   color: white;
-  position: relative; /* Add relative positioning for the Slogan */
+  position: relative;
+  /* Add relative positioning for the Slogan */
 }
 
 .Slogan {
@@ -153,7 +170,7 @@
   margin: 0 5px;
   background-color: black;
   color: white;
-  border:none;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
@@ -184,8 +201,9 @@ main {
 }
 
 .X {
-padding-right: 20px;
+  padding-right: 20px;
 }
+
 .order-button {
   padding: 15px 30px;
   cursor: pointer;
@@ -197,6 +215,7 @@ padding-right: 20px;
   transition: background-color 0.3s ease;
   margin-bottom: 30px;
 }
+
 .order-button:hover {
   background-color: #555;
 }
@@ -205,10 +224,10 @@ padding-right: 20px;
 
 
 @media screen and (max-width: 767px) {
-.item1 {
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-}
+  .item1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
 }
