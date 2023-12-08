@@ -186,6 +186,22 @@ main {
 .X {
 padding-right: 20px;
 }
+.order-button {
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 30px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+.order-button:hover {
+  background-color: #555;
+}
+
+
 
 
 @media screen and (max-width: 767px) {
