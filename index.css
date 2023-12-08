@@ -64,6 +64,8 @@ p {
 }
 
 .menubox {
+    text-decoration: none;
+    color: #fff;
     display: flex;
   justify-content: space-around;
   margin-top: 20px;
@@ -266,7 +268,8 @@ header .links_box {
     justify-content: space-between;
     align-items: center;
 }
-
+a { text-decoration: none;
+    color: #fff;}
 header .links_box a {
     color: #351f16;
     text-decoration: none;
