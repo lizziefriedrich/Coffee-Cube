@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopping Cart</title>
   <link rel="stylesheet" type="text/css" href="shoppingcartcopy.css">
-  <link rel="stylesheet" type="text/css" href="../header.css">
+  <link rel="stylesheet" type="text/css" href="header.css">
 </head>
 <body>
   <header>
-    <a href="../index.html" class="logo">
-      <img src="../cubelogo.png" alt="coffee cube logo">
+    <a href="./index.html" class="logo">
+      <img src="../images/cubelogo.png" alt="coffee cube logo">
       <span>Coffee Cube</span>
     </a>
 
     <nav class="links_box" id="menu">
-      <a href="../index.html">Home</a>
-      <a href="../CoffeeCube_Menu.html">Menu</a>
-      <a href="../index.html#location">Locations</a>
-      <a href="./shoppingcartcopy.html">Shopping cart</a>
-  </nav>
+      <a href="./index.html">Home</a>
+      <a href="./menu.html">Menu</a>
+      <a href="./homepagemenu.html">Locations</a>
+      <a href="./shoppingcart.html">Shopping cart</a>
+    </nav>
 
     <button class="hamburger" type="button" id="hamburger">
       <span class="hamburger-box">
@@ -62,7 +62,7 @@
 
     <div class="cart">
         <div class="item1">
-            <img src="../drink.jpeg" class="drink" alt="Latte">
+            <img src="../images/drink.jpeg" class="drink" alt="Latte">
             <div class="item">
                 Iced Latte
             </div>
@@ -83,7 +83,7 @@
             </div>
         </div>
         <div class="item1">
-            <img src="../drink.jpeg" class="drink" alt="Latte">
+            <img src="../images/drink.jpeg" class="drink" alt="Latte">
             <div class="item">
                 Iced Latte
             </div>
@@ -104,7 +104,7 @@
             </div>
         </div>
             <div class="item1">
-                <img src="../drink.jpeg" class="drink" alt="Latte">
+                <img src="../images/drink.jpeg" class="drink" alt="Latte">
                 <div class="item">
                     Iced Latte
                 </div>
@@ -129,20 +129,23 @@
 
     <div class="outerbox">
       <div class="order-total">
-        <p>Order Total:<br>315 kc</p>
+        <p>Order Total<br>315 kc</p>
       </div>
     </div>
 
     <div class="arrow">
       <a href="../confirmorder.html">
-        <div class="order-button">
-          Checkout
-        </div>
+        <img src="../arrow5.jpg" class="arrowpic" alt="Arrow Pointing Right">
       </a>
     </div>
   </main>
 
   <footer>
+    <p>&copy; 2023 Coffee Cube. All rights reserved.</p>
+    <p>
+      <a href="#gdpr">GDPR</a> |
+      <a href="#terms">Terms and Conditions</a>
+    </p>
     <div class="language-switcher">
       <label for="language">Language:</label>
       <select id="language" onchange="changeLanguage(this.value)">
@@ -150,11 +153,6 @@
         <option value="czech">Czech</option>
       </select>
     </div>
-    <p>
-      <a href="/GDPR.html">GDPR</a> |
-      <a href="/TC.html">Terms and Conditions</a>
-    </p>
-    <p>&copy; 2023 Coffee Cube. All rights reserved.</p>
   </footer>
 </body>
 </html>

@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-  background-image: url(bean.jpg);
+  background-image: url(images/bean.jpg);
   background-size: cover;
   padding: 40px;
   opacity: 0.8;
