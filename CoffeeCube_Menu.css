@@ -296,7 +296,7 @@ footer {
 .container {
     height: 200px;
     width: 100%;
-    background-image: url(bean.jpg);
+    background-image: url(images/bean.jpg);
     background-size: 100% 300%;
 }
 
