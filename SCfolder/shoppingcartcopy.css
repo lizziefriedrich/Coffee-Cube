@@ -107,7 +107,7 @@
 }
 
 .beans {
-  background-image: url(../bean.jpg);
+  background-image: url(../images/bean.jpg);
   background-size: cover;
   padding: 80px; /* Increased padding for better appearance */
   opacity: 0.8;
