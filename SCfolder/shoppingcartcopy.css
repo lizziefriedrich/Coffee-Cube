@@ -103,10 +103,6 @@
   padding-top: 2px;
 }
 
-.arrow a:hover .arrowpic {
-  transform: scale(1.2);
-}
-
 .Contact-info {
   display: flex;
   flex-direction: column;
@@ -177,7 +173,7 @@
 }
 
 .fake-button:hover {
-  background-color: red;
+  background-color: #555;
 }
 
 #plus {
@@ -213,13 +209,16 @@ main {
   color: #fff;
   font-size: 30px;
   transition: background-color 0.3s ease;
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
 }
 
 .order-button:hover {
   background-color: #555;
 }
 
+a {
+  text-decoration: none;
+}
 
 
 
@@ -228,6 +227,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .X {
+    padding-right:0px;
   }
 
 }
