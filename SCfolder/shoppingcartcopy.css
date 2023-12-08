@@ -141,7 +141,7 @@
 .delete-button {
   display: flex;
   justify-content: center;
-  background-color: #ff5a5a;
+  background-color: red;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -149,6 +149,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 7px;
+}
+
+.delete-button:hover {
+  background-color:#ff5a5a
 }
 
 .textfields {
@@ -201,15 +205,15 @@ main {
 }
 
 .order-button {
-  padding: 15px 30px;
+  padding: 20px 40px;
   cursor: pointer;
   border: none;
   border-radius: 8px;
   background-color: #000000;
   color: #fff;
-  font-size: 30px;
+  font-size: 35px;
   transition: background-color 0.3s ease;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .order-button:hover {
