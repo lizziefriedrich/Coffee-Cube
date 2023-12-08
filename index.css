@@ -17,6 +17,8 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 30px;
+    padding: 15px;
   
 }
 .menutext {
@@ -29,6 +31,7 @@ p {
 .address {
     display: flex;
     min-width: 40px;
+    justify-content: center;
 }
 
 .hours {
@@ -62,27 +65,22 @@ p {
 
 .menubox {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    min-height: 300px;
-    background-color: #000000;
-    /* Dark background color */
-    color: #ecf0f1;
-    /* Light text color */
-    flex-direction: column;
-    flex-wrap: nowrap;
-    border-radius: 10px;
-    /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* Box shadow for depth */
-    transition: background-color 0.3s ease;
-    /* Smooth color transition on hover */
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px; /* Increase padding to space out the buttons */
+  border-radius: 8px; /* Round corners for a softer look */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for prominence */
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #000000;
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s ease;
 }
 
 .menubox:hover {
-    background-color: #e74c3c;
-    /* Darker background color on hover */
+    background-color: #555;
 }
 
 .menubox img {

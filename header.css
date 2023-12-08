@@ -4,21 +4,27 @@ footer {
   color: #fff; /* White text color */
   padding: 20px; /* Add padding for better appearance */
   text-align: center; /* Center align text */
+  width: 100%;
 }
 
 /* Style for the footer links */
 footer a {
-  color: #fff; /* White link color */
-  text-decoration: none; /* Remove underlines */
-  margin: 0 10px; /* Add spacing between links */
+  color: #fff;
+  /* White link color */
+  text-decoration: none;
+  /* Remove underlines */
+  margin: 0 10px;
+  /* Add spacing between links */
 }
+
 .language-switcher {
   display: inline-block;
   margin-top: 10px;
 }
 
 .language-switcher select {
-  padding: 5px;}
+  padding: 5px;
+}
 
 .responsive {
   width: 100%;
@@ -68,7 +74,7 @@ footer a {
     font-size: 12px;
   }
 
-  
+
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -206,17 +212,23 @@ header .links_box a:hover:after {
 /*END navigation links*/
 
 @media screen and (max-width:767px) {
-  .locationdiv {display: flex;
-  flex-direction: column;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;}
+  .locationdiv {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
 }
+
 @media screen and (max-width:767px) {
-  .locationbox {width: 50%;}
+  .locationbox {
+    width: 50%;
+  }
 }
+
 /*hamburger (two lines) is only shown on screen smaller than 1000px. In this part you can see styling and animation of it*/
 .hamburger {
   display: none;
