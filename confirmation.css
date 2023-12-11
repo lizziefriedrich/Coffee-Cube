@@ -22,9 +22,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-
-gap: 20px;
-  width: 100%;
+  gap: 20px
 }
 
 .confirmation {
@@ -34,7 +32,6 @@ gap: 20px;
   padding: 30px; /* Increase padding for better appearance */
   cursor: pointer;
   border: none;
-  border-radius: 8px;
   background-color: #000000;
   color: #fff;
   font-size: 24px; /* Increase font size for emphasis */
@@ -73,7 +70,7 @@ button:hover {
 }
 
 
-.footer {
+footer {
   margin-top: auto;
   background-color: #000000;
   color: #fff;
@@ -82,18 +79,18 @@ button:hover {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .buttons {
     flex-direction: column;
   }
+.hamburger {
+  display:flex;
+  align-items: right;
+}
 
   button {
     width: 80%;
     margin: 10px auto;
-  }
-
-  .container1 {
-    width: 90%;
   }
 }
 
