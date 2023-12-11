@@ -83,11 +83,9 @@ footer {
   .buttons {
     flex-direction: column;
   }
-.hamburger {
-  display:flex;
-  align-items: right;
-}
-
+  .container11 {
+    width: 90%
+  }
   button {
     width: 80%;
     margin: 10px auto;
